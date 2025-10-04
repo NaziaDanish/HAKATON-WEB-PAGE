@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery Landing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .top-bar {
+      background-color: #E21B70;
+      color: white;
+      padding: 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .top-bar .btn-custom {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-weight: 500;
+    }
+    .top-bar .btn-custom:hover {
+      background-color: white;
+      color: #E21B70;
+    }
+
+    .navbar {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .navbar-brand img {
+      height: 35px;
+    }
+    .navbar .nav-icons img {
+      margin-left: 8px;
+    }
+
+    .navbar-menu .text-center img {
+      height: 40px;
+      margin-bottom: 5px;
+    }
+    .navbar-menu p {
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .hero {
+      background: #ffe6f0;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero img {
+      max-width: 150px;
+      filter: brightness(0) invert(1); 
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    footer span {
+      color: #E21B70;
+      font-weight: bold;
+    }
+
+    .card-img-top {
+  width: 100%;
+  height: 100px; 
+  object-fit: cover;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero img {
+        max-width: 100px;
+      }
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <img src="https://micro-assets.foodora.com/img/ic-rider-icon.svg" alt="bag" height="45">
+    <button class="btn btn-custom btn-sm">SIGN UP TO BE A RESTAURANT PARTNER</button>
+    <button class="btn btn-custom btn-sm">SIGN UP FOR A BUSINESS ACCOUNT</button>
+  </div>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/foodpanda_logo.png" alt="logo">
+      </a>
+      <div class="d-flex align-items-center flex-wrap nav-icons">
+        <span class="me-3 d-flex align-items-center">
+          <i class="bi bi-geo-alt"></i>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/048/055/684/small_2x/3d-shiny-blue-light-and-white-location-icon-3d-illustration-png.png" alt="icon" height="20" class="ms-1">
+          New address Service Road W Islamabad
+        </span>
+        <button class="btn btn-outline-dark me-2 btn-sm">Log in</button>
+        <button class="btn btn-danger btn-sm">Sign up for free delivery</button>
+        <p class="mb-0 d-flex align-items-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/1011/1011322.png" alt="network" height="25" class="ms-3">EN 
+          <img src="https://img.freepik.com/premium-vector/shoping-bag-icon-paper-packet-illustration-symbol-shopper-vector_744955-1086.jpg" alt="shoping" width="25" height="25" class="ms-2">
+        </p>
+      </div>
+    </div>
+  </nav>
+<div class="container mt-2 navbar-menu">
+  <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+
+  
+    <div class="d-flex align-items-center gap-1">
+      <img src="https://img.icons8.com/ios-filled/50/000000/delivery.png" alt="Delivery" height="40">
+      <span>Delivery</span>
+    </div>
+
+    <div class="d-flex align-items-center gap-1">
+      <img src="https://img.icons8.com/ios-filled/50/000000/take-away-food.png" alt="Pickup" height="40">
+      <span>Pickup</span>
+    </div>
+
+    <div class="d-flex align-items-center gap-1">
+      <img src="https://img.icons8.com/ios-filled/50/000000/shopping-bag.png" alt="Shop" height="40">
+      <span>Shop</span>
+    </div>
+
+    <div class="d-flex align-items-center gap-1">
+      <img src="https://www.freeiconspng.com/thumbs/market-icons/market-icon-4.png" alt="Panda Mart" height="40">
+      <span>Panda Mart</span>
+    </div>
+
+    <div class="d-flex align-items-center gap-1">
+      <img src="https://static.vecteezy.com/system/resources/previews/021/711/958/non_2x/catering-icon-vector.jpg" alt="Caterers" height="40">
+      <span>Caterers</span>
+    </div>
+
+  </div>
+      <div class="d-flex justify-content-center mt-3">
+    <input type="text" class="form-control w-50 me-2" placeholder="Search for restaurant or food...">
+    <button class="btn btn-danger">Search</button>
+  </div>
+</div>
+ 
+  <div class="container my-4">
+  <div class="row align-items-center bg-light rounded p-3">
+    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+      <h3><strong>Sign up for free delivery</strong><br>on your first order</h3>
+      <button class="btn btn-danger mt-3">Sign up</button>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.L7JktB2sSz2WGsieeCUN0wHaEl?pid=Api&P=0&h=220" class="img-fluid rounded" alt="Free Delivery">
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <h4 class="mb-3 text-center"><strong>Your Daily Deals</strong></h4>
+  <div class="row g-3 justify-content-center">
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="http://a.mktgcdn.com/p/4btOQoxipym7F0goXu7JOfc-BdHGR32C9STqIFdPz8Y/586x450.jpg" class="card-img-top" alt="Deal 1">
+        <div class="card-body">
+          <h5 class="card-title">Pizza Special</h5>
+          <p class="card-text">Get 20% off on all medium pizzas today!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://imgcdn.stablediffusionweb.com/2024/12/28/d4fa6c0c-c09a-4cc5-b2af-890e9759942a.jpg" class="card-img-top" alt="Deal 2">
+        <div class="card-body">
+          <h5 class="card-title">Burger Combo</h5>
+          <p class="card-text">Buy 1 get 1 free on all burger combos.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.suB0a9J2bMYlQlkjHSPfigHaEU?pid=Api&P=0&h=220" class="card-img-top" alt="Deal 3" width="300" height="250">
+        <div class="card-body">
+          <h5 class="card-title">Sushi Delight</h5>
+          <p class="card-text">Flat 15% off on sushi platters for today only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+
+
+<div class="container mt-4">
+  <h4 class="mb-3 text-center"><strong>Cuisines for You</strong></h4>
+  <div class="d-flex overflow-auto gap-3 pb-3">
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/Section 1 image 1.jpeg" class="card-img-top" alt="Pizza">
+      <div class="card-body p-2"><p class="card-text">Pizza</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/Section 1 image 2.jpeg" class="card-img-top" alt="Fast Food">
+      <div class="card-body p-2"><p class="card-text">Fast Food</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;" width="95px;" height="95px">
+      <img src="assits/Saction 1 image 3.jpeg" class="card-img-top" alt="Burgers">
+      <div class="card-body p-2"><p class="card-text">Burgers</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/section1 image 4.jpeg" class="card-img-top" alt="Biryani">
+      <div class="card-body p-2"><p class="card-text">Biryani</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/section1 image 5.jpeg" class="card-img-top" alt="Desserts">
+      <div class="card-body p-2"><p class="card-text">Desserts</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/Section 1 image 6" class="card-img-top" alt="Ice Cream">
+      <div class="card-body p-2"><p class="card-text">Ice Cream</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/section 1 image 7.jpeg" class="card-img-top" alt="Paratha">
+      <div class="card-body p-2"><p class="card-text">HalwaPuri</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/section 1 image 8.jpeg" class="card-img-top" alt="Halwa Puri">
+      <div class="card-body p-2"><p class="card-text">Parata</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/section 1 image 9.jpeg" class="card-img-top" alt="Pasta">
+      <div class="card-body p-2"><p class="card-text">Haleem</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/section 1 image 10.jpeg" class="card-img-top" alt="Haleem">
+      <div class="card-body p-2"><p class="card-text">Pasta</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/section 1 image 11.jpeg" class="card-img-top" alt="Thai">
+      <div class="card-body p-2"><p class="card-text">Thai</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/s 1 image 12" class="card-img-top" alt="Shawarma">
+      <div class="card-body p-2"><p class="card-text">Shawarma</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/s 1 image 13" class="card-img-top" alt="Chinese">
+      <div class="card-body p-2"><p class="card-text">Chinese</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/s1 image 14.jpeg" class="card-img-top" alt="Pulao">
+      <div class="card-body p-2"><p class="card-text">Pulao</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/s 1 image 15.avif" class="card-img-top" alt="Samosa">
+      <div class="card-body p-2"><p class="card-text">Samosa</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Tripple-Dipped-Broasted-Chicken.jpg" class="card-img-top" alt="Broast">
+      <div class="card-body p-2"><p class="card-text">Broast</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://www.tastingtable.com/img/gallery/20-traditional-pakistani-dishes-everyone-needs-to-try-once/l-intro-1674666910.jpg" class="card-img-top" alt="Pakistani">
+      <div class="card-body p-2"><p class="card-text">Pakistani</p></div>
+    </div>
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="assits/s 1 image 18.jpeg" class="card-img-top" alt="Shake">
+      <div class="card-body p-2"><p class="card-text">Shake</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <h4 class="mb-3 text-center"><strong>Homechefs - Khaas Discounts</strong></h4>
+  <div class="d-flex overflow-auto gap-3 pb-3">
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.H7mtcGve2es2i-cVI5nPKAHaEL?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 1">
+      <div class="card-body p-2"><p class="card-text">Pizza Delight</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.8CCdiNC2ctrUsG7afl44FAHaFj?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 2">
+      <div class="card-body p-2"><p class="card-text">Burger Fiesta</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.2YUCD-Qpx4PYCOS_R2l53wHaHa?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 3">
+      <div class="card-body p-2"><p class="card-text">Biryani Special</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.KrrbuHb5o5erIu6d3zRZ4AHaJ4?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 4">
+      <div class="card-body p-2"><p class="card-text">Chocolate Cake</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.8n9yGS47aDdH7Sml0VbjowHaHa?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 5">
+      <div class="card-body p-2"><p class="card-text">Ice Cream Treat</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.Kw3frtWSONZ0TNq9i0LoKwHaEK?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 6">
+      <div class="card-body p-2"><p class="card-text">Paratha Roll</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.GEjKQB6GohTt9FXdcyU4CAHaE8?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 7">
+      <div class="card-body p-2"><p class="card-text">Halwa Puri</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.jgVvC5M8r9zUdR-TGk6wwAHaLH?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 8">
+      <div class="card-body p-2"><p class="card-text">Pasta Italiano</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.KKrTutXcThvoSfi9bOz5NwHaHa?pid=Api&P=0&h=220 class="card-img-top" alt="Homechef 9">
+      <div class="card-body p-2"><p class="card-text">Haleem Special</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.LLuS-XeI1W3HPjzWdfyPcAHaHa?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 10">
+      <div class="card-body p-2"><p class="card-text">Shawarma Wrap</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.thtSBWTNnMwNURX4uFRt6AHaE8?pid=Api&P=0&h=220" class="card-img-top" alt="Homechef 11">
+      <div class="card-body p-2"><p class="card-text">Chinese Delight</p></div>
+    </div>
+
+    <div class="card text-center flex-shrink-0" style="width: 120px;">
+      <img src="https://i.ytimg.com/vi/MnnfZSYA3N8/maxresdefault.jpg" class="card-img-top" alt="Homechef 12">
+      <div class="card-body p-2"><p class="card-text">Pulao Biryani</p></div>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer>
+    Welcome! Enjoy <span>Free delivery</span> and exclusive discount on your first order
+  </footer>
+
+</body>
+</html>
+
